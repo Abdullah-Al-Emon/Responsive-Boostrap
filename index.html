@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive bootstrap</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar start here -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-info sticky-top">
+                <a href="#" class="navbar-brand fs-2 ms-3 p-3">Study With Abdullah</a>
+                <!-- menu bar start here  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu bar start here  -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Tutorial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contuct Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- navbar end here  -->
+        <!-- carousel and slide show section start here  -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="istockphoto-1318748572-612x612.jpg" class="d-block h-50 w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="istockphoto-1312596921-170667a.jpg" class="d-block h-50 w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="istockphoto-1301976222-170667a.jpg" class="d-block h-50 w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel and slide show section end here  -->
+        <!-- service-section start here  -->
+        <main>
+            <div class="service-section bg-light">
+                <div class="title text-center py-4">
+                    <h3 class="fw-bold fs-2">Service</h3>
+                </div>
+                <div class="row text-md-center mb-3 pb-2 text-lg-center text-left">
+                    <div class="col-lg-3 col-md-6 pt-sm-2">
+                        <i class="fa-3x rounded-circle bg-primary mb-3 p-2 text-white fa-solid fa-handshake-angle"></i>
+                        <h5 class="text-uppercase">Web desinging</h5>
+                        <p class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                            expedita beatae ad quasi possimus ratione est doloribus debitis, placeat pariatur?</p>
+                        <!-- badge -->
+                        <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top right"
+                            title="click me">See design <span class="badge bg-secondary rounded-pill">25</span></button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-sm-2">
+                        <i class="fa-3x rounded-circle bg-primary mb-3 p-2 text-white fa-solid fa-handshake-angle"></i>
+                        <h5 class="text-uppercase">Web desinging</h5>
+                        <p class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                            expedita beatae ad quasi possimus ratione est doloribus debitis, placeat pariatur?</p>
+                        <!-- badge -->
+                        <button class="btn btn-primary">See design <span
+                                class="badge bg-secondary rounded-pill">25</span></button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-sm-2">
+                        <i class="fa-3x rounded-circle bg-primary mb-3 p-2 text-white fa-solid fa-handshake-angle"></i>
+                        <h5 class="text-uppercase">Web desinging</h5>
+                        <p class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                            expedita beatae ad quasi possimus ratione est doloribus debitis, placeat pariatur?</p>
+                        <!-- badge -->
+                        <button class="btn btn-primary">See design <span
+                                class="badge bg-secondary rounded-pill">25</span></button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-sm-2">
+                        <i class="fa-3x rounded-circle bg-primary mb-3 p-2 text-white fa-solid fa-handshake-angle"></i>
+                        <h5 class="text-uppercase">Web desinging</h5>
+                        <p class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                            expedita beatae ad quasi possimus ratione est doloribus debitis, placeat pariatur?</p>
+                        <!-- badge -->
+                        <button class="btn btn-primary">See design <span
+                                class="badge bg-secondary rounded-pill">25</span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- service-section end here  -->
+        <!-- about-me start section   -->
+        <div class="about-me alert-secondary">
+            <div class="text-center pt-4">
+                <h3 class="fw-bolder fs-2">About Me</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img class="img-fluid rounded-circle pb-3 px-4" style="height: 290px; width: 350px;"
+                        src="abdullah.jpg" alt="">
+                </div>
+                <div class="col-lg-8 text-sm-start text-md-start p-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatem sint sapiente
+                        placeat incidunt quaerat quibusdam laboriosam, tempora quae! Vel quasi quidem magnam nulla minus
+                        eligendi ea repellendus impedit ut sint ad alias consectetur expedita. <a href="#demo"
+                            data-bs-toggle="collapse" class="d-block">Learn more ...</a></p>
+                    <!-- collapse -->
+                    <div class="collapse" id="demo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, impedit. Voluptas odit
+                            doloribus veniam! Neque ab, modi optio dolor debitis voluptas obcaecati et dolorem. Tenetur
+                            soluta commodi impedit aspernatur dolore?</p>
+                    </div>
+                    <button class="btn text-capitalize btn-outline-primary">CV DWONLOAD</button>
+                    <!-- dismissible alert button  -->
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                        Have you visit my youtube channel?
+                        <strong>Visit her</strong>
+                    </div>
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                        learn Bootstrap 5?
+                        <strong>visit her</strong>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    This is bar
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pro p-2">
+                <div class="progress bg-light">
+                    <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <!-- about-me end section  -->
+        <!-- card section starts here  -->
+        <div class="tutorial-section">
+            <div class="title text-center py-3">
+                <h3 class="fw-bolder fs-2">Tutorial</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="2019-01-26-12-37-54-741.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">HSC ICT</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eveniet.
+                            </p>
+                            <a href="#" class="card-link stretched-link">Visit this playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="2019-01-26-12-37-54-741.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">HSC ICT</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eveniet.
+                            </p>
+                            <a href="#" class="card-link stretched-link">Visit this playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="2019-01-26-12-37-54-741.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">HSC ICT</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eveniet.
+                            </p>
+                            <a href="#" class="card-link stretched-link">Visit this playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="2019-01-26-12-37-54-741.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">HSC ICT</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eveniet.
+                            </p>
+                            <a href="#" class="card-link stretched-link">Visit this playlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card section ends here  -->
+        <!-- customer-review start  -->
+        <div class="customer-review bg-light mt-4">
+            <div class="title text-center py-3">
+                <h3 class="fw-bolder fs-2">Customer Review</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <i class="fa-4x pb-3 fa-solid fa-circle-user pt-sm-2"></i>
+                    <blockquote class="blockqoute">
+                        <p class="fs-6 px-3">This is one of the best website. I have ever seen in my life. I found
+                            everything in this website that I need to learn <abbr title="Bootstrap 5">BS 5</abbr></p>
+                        <footer class="blockquote-footer">
+                            Abdullah Al Emon
+                            <cite>youtube</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <i class="fa-4x pb-3 fa-solid fa-circle-user pt-sm-2"></i>
+                    <p class="fs-6 px-3">This is one of the best website. I have ever seen in my life. I found
+                        everything in this website that I need to learn <abbr title="Bootstrap 5">BS 5</abbr></p>
+                    <footer class="blockquote-footer">
+                        Abdullah Al Emon
+                        <cite>youtube</cite>
+                    </footer>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center pt-sm-2">
+                    <i class="fa-4x pb-3 fa-solid fa-circle-user"></i>
+                    <p class="fs-6 px-3">This is one of the best website. I have ever seen in my life. I found
+                        everything in this website that I need to learn <abbr title="Bootstrap 5">BS 5</abbr></p>
+                    <footer class="blockquote-footer">
+                        Abdullah Al Emon
+                        <cite>youtube</cite>
+                    </footer>
+                </div>
+            </div>
+            <!-- According section start  -->
+            <div class="accordion mb-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- according section end  -->
+        </div>
+        <!-- customer-review end  -->
+
+        <!-- troggleable dynamic tab start here  -->
+        <div class="other-section">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active" href="#edu">Education</a></li>
+                <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#skill">Skill</a></li>
+                <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#hobby">Hobby</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="edu" class="tab-pane active">
+                    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores repellat soluta
+                        distinctio molestiae ipsam dolore. Modi, omnis veniam.</p>
+                </div>
+                <div id="skill" class="tab-pane fade">
+                    <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores repellat soluta
+                        distinctio molestiae ipsam dolore. Modi, omnis veniam.</p>
+                </div>
+                <div id="hobby" class="tab-pane fade">
+                    <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores repellat soluta
+                        distinctio molestiae ipsam dolore. Modi, omnis veniam.</p>
+                </div>
+            </div>
+        </div>
+        <!-- troggleable dynamic tab end here  -->
+        <!-- troggleable dynamic pill start here  -->
+        <div class="other-section">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a data-bs-toggle="pill" class="nav-link active" href="#eu">Education</a></li>
+                <li class="nav-item"><a data-bs-toggle="pill" class="nav-link" href="#sill">Skill</a></li>
+                <li class="nav-item"><a data-bs-toggle="pill" class="nav-link" href="#hbby">Hobby</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="eu" class="tab-pane active">
+                    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores repellat soluta
+                        distinctio molestiae ipsam dolore. Modi, omnis veniam.</p>
+                </div>
+                <div id="sill" class="tab-pane fade">
+                    <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores repellat soluta
+                        distinctio molestiae ipsam dolore. Modi, omnis veniam.</p>
+                </div>
+                <div id="hbby" class="tab-pane fade">
+                    <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid maiores repellat soluta
+                        distinctio molestiae ipsam dolore. Modi, omnis veniam.</p>
+                </div>
+            </div>
+        </div>
+        <!-- troggleable dynamic pill end here  -->
+        <!-- form style start here  -->
+        <div class="bg-light">
+            <div class="title text-center pt-3">
+                <h3 class="fw-bolder fs-2">Form</h3>
+            </div>
+            <form action="php">
+                <div class="row m-1">
+                    <div class="col">
+                        <label class="lable-form" for="f-name">First Name:</label>
+                        <input class="form-control" placeholder="First Name" type="text" name="f-name" id="f-name">
+                    </div>
+                    <div class="col">
+                        <label class="lable-form" for="l-name">Last Name:</label>
+                        <input class="form-control" placeholder="Last Name" type="text" name="l-name" id="l-name">
+                    </div>
+                </div>
+                <div class="m-3">
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </div>
+                <div class="m-3">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-control" type="email" id="email" placeholder="Enter Email">
+                </div>
+
+                <div class="form-floating m-3">
+                    <input class="form-control" type="email" name="email1" id="email1" placeholder="Re Enter Email">
+                    <label for="email1">Re Enter Email</label>
+                </div>
+
+                <div class="m-3">
+                    <label class="form-label" for="pwd" readonly>Password:</label>
+                    <input class="form-control" type="password" id="pwd" placeholder="Enter Password">
+                </div>
+                <div class="form-floating m-3">
+                    <input class="form-control" type="password" name="pass" id="pass" placeholder="Re Enter Password">
+                    <label for="pass">Re Enter Password</label>
+                </div>
+                <div class="m-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button class="btn btn-success">Go</button>
+                    </div>
+                </div>
+                <div class="m-3">
+                    <div class="input-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown
+                            button</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            <li><a class="dropdown-item" href="#">Link 4</a></li>
+                        </ul>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </div>
+                <div class="m-3">
+                    <select class="form-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="m-3">
+                    <label for="browser" class="form-label">Choose your browser from the list:</label>
+                    <input id="browser" class="form-control" placeholder="search browser" list="browsers">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="opera">
+                    </datalist>
+                </div>
+                <div class="m-3">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input type="checkbox">
+                        </div>
+                        <input type="text" class="form-control" placeholder="Some text">
+                    </div>
+                </div>
+                <div class="m-3">
+                    <label for="radio1">Gender:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio1" id="radio1">
+                        <label class="form-check-label" for="radio1">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio1" id="radio2">
+                        <label class="form-check-label" for="radio2">Female</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio3" id="radio3" disabled>
+                        <label class="form-check-label" for="radio3">Shemale</label>
+                    </div>
+                </div>
+                <div class="m-3">
+                    <textarea class="form-control" placeholder="Comments" style="resize:none;" rows="5" id="comment"
+                        name="text" disabled></textarea>
+                </div>
+                <div class="m-3">
+                    <label class="form-label" for="customRange">Custom Range</label>
+                    <input class="form-range" type="range" name="points" id="customRange">
+                </div>
+                <div class="m-3">
+                    <label class="form-label" for="customRange1">Step</label>
+                    <input class="form-range" type="range" step="20" name="points" id="customRange1">
+                </div>
+                <div class="m-3">
+                    <label class="form-label" for="customRange2">Min and Max</label>
+                    <input class="form-range" type="range" min="0" max="4" name="points" id="customRange2">
+                </div>
+                <div class="form-check form-switch m-3">
+                    <input class="form-check-input" type="checkbox" name="darkmode" id="myswitch" checked>
+                    <label class="form-check-label" for="myswitch">Dark Mode</label>
+                </div>
+                <div class="form-check m-3">
+                    <input class="form-check-input" type="checkbox" name="check" id="checkbox">
+                    <label class="form-check-label" for="checkbox">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary mx-3 mb-4">Submit</button>
+                <button type="reset" class="btn btn-primary mx-3 mb-4">Reset</button>
+            </form>
+        </div>
+
+        <!-- form style end here  -->
+        <!-- table start here  -->
+        <div class="title text-center py-3">
+            <h3 class="fw-bolder fs-2">TABLE </h3>
+        </div>
+        <div class="table-responsive-sm">
+            <table class="table p-3 text-center table-hover border table-sm">
+                <thead>
+                    <tr class="table-primary">
+                        <th>information</th>
+                        <th>person 1</th>
+                        <th>person 2</th>
+                        <th>person 3</th>
+                        <th>person 4</th>
+                        <th>person 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>name:</td>
+                        <td>abdulllah</td>
+                        <td>sahin</td>
+                        <td>sahid</td>
+                        <td>kazi</td>
+                        <td>sojib</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>age:</td>
+                        <td>13</td>
+                        <td>12</td>
+                        <td>21</td>
+                        <td>18</td>
+                        <td>28</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>class:</td>
+                        <td>9</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>birthdate:</td>
+                        <td>10/04/2003</td>
+                        <td>05/04/1990</td>
+                        <td>24/07/1995</td>
+                        <td>30/01/1986</td>
+                        <td>12/05/2001</td>
+                    </tr>
+                </tbody>
+                <!-- <tfoot>
+                        <tr>
+                        <td>infortation</td>
+                    </tr>
+                </tfoot> -->
+            </table>
+        </div>
+
+        <!-- table end here  -->
+        <!-- list-group start  -->
+        <div class="student-list">
+            <ul class="list-group">
+                <li class=" list-group-item bg-info text-white">Abdullah</li>
+                <li class="list-group-item bg-success text-white">Sakib</li>
+                <li class="list-group-item bg-primary text-white">Muktar</li>
+                <a href="#" class="list-group-item btn-outline-info list-group-item-danger text-center text-dark">Visit
+                    my channel</a>
+            </ul>
+        </div>
+        <!-- list-group end here  -->
+        <!-- pagination start here  -->
+        <footer class="bg-secondary">
+            <ul class="pagination py-3 justify-content-center">
+                <li class="page-item"><a href="#" class="page-link">Prev</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+        </footer>
+        <!-- pagination end here  -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
